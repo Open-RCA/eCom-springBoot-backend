@@ -18,7 +18,7 @@ public class ProductSubCategory {
 
     @Id
     @Column(name = "")
-    private Integer subCategoryId;
+    private Long subCategoryId;
 
     @Column(name = "")
     private String subCategoryName;

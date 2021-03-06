@@ -19,7 +19,7 @@ public class Ship {
 
     @Id
     @Column(name = "")
-    private Integer shipId;
+    private Long shipId;
 
     @Column(name = "")
     private Integer orderId;

@@ -18,7 +18,7 @@ public class Customer {
 
     @Id
     @Column(name = "")
-    private Integer customerId;
+    private Long customerId;
 
     @Column(name = "")
     private String firstName;

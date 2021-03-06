@@ -7,6 +7,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.sql.Date;
 import java.sql.Time;
 
 @Getter
@@ -20,7 +21,7 @@ public class Admin {
 
     @Id
     @Column(name = "")
-    private Integer adminId;
+    private Long adminId;
 
     @Column(name = "")
     private String firstName;
@@ -44,9 +45,9 @@ public class Admin {
     private Integer level;
 
     @Column(name = "")
-    private Time passwordUpdatedAt;
+    private Date passwordUpdatedAt;
 
     @Column(name = "")
-    private Time joinedAt;
+    private Date joinedAt;
 
 }

@@ -18,7 +18,7 @@ public class ProductFeedback {
 
     @Id
     @Column(name = "")
-    private Integer feedbackId;
+    private Long feedbackId;
 
     @Column(name = "")
     private Integer product_id;

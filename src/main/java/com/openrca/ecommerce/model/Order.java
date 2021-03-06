@@ -20,7 +20,7 @@ public class Order {
 
     @Id
     @Column(name = "")
-    private Integer orderId;
+    private Long orderId;
 
     @Column(name = "")
     private Integer customerId;

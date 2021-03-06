@@ -18,7 +18,7 @@ public class ProductCategory {
 
     @Id
     @Column(name = "")
-    private Integer categoryId;
+    private Long categoryId;
 
     @Column(name = "")
     private String categoryName;
