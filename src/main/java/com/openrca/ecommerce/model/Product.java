@@ -6,6 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.sql.Date;
 
 @Getter
 @Setter
@@ -21,7 +22,10 @@ public class Product {
     private Long productId;
 
     @Column(name = "")
-    private Integer subCategoryId;
+    private Long categoryId;
+
+    @Column(name = "")
+    private Long subCategoryId;
 
     @Column(name = "")
     private String productName;
@@ -37,5 +41,8 @@ public class Product {
 
     @Column(name = "")
     private String description;
+
+    @Column(name = "")
+    private Date addedAt;
 
 }

@@ -6,6 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.sql.Date;
 
 @Getter
 @Setter
@@ -25,5 +26,8 @@ public class ProductSubCategory {
 
     @Column(name = "")
     private Integer categoryId;
+
+    @Column(name = "")
+    private Date addedAt;
 
 }
