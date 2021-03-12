@@ -17,6 +17,22 @@ import java.sql.Time;
 @NoArgsConstructor
 public class Ship {
 
+    //Constructor without Id
+
+
+    public Ship(Integer orderId, Integer employeeId, Time dateOfShipment, String shipName, String shipAddress, String shipCity, String shipCountry, String shipPostalCode, Time addedInDbAt, Double shipCosts) {
+        this.orderId = orderId;
+        this.employeeId = employeeId;
+        this.dateOfShipment = dateOfShipment;
+        this.shipName = shipName;
+        this.shipAddress = shipAddress;
+        this.shipCity = shipCity;
+        this.shipCountry = shipCountry;
+        this.shipPostalCode = shipPostalCode;
+        this.addedInDbAt = addedInDbAt;
+        this.shipCosts = shipCosts;
+    }
+
     @Id
     @Column(name = "")
     private Long shipId;

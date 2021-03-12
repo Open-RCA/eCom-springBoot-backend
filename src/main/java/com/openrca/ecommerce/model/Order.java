@@ -18,6 +18,18 @@ import java.sql.Time;
 @AllArgsConstructor
 public class Order {
 
+    //Constructor without Id
+    public Order(Integer customerId, Integer shipId, Integer totalNumberOfOrderedProduct, Double totalOrderedCost, Double totalDiscount, Time orderedAt, Boolean orderStatus, String shippingMethod) {
+        this.customerId = customerId;
+        this.shipId = shipId;
+        this.totalNumberOfOrderedProduct = totalNumberOfOrderedProduct;
+        this.totalOrderedCost = totalOrderedCost;
+        this.totalDiscount = totalDiscount;
+        this.orderedAt = orderedAt;
+        OrderStatus = orderStatus;
+        ShippingMethod = shippingMethod;
+    }
+
     @Id
     @Column(name = "")
     private Long orderId;

@@ -19,6 +19,20 @@ import java.sql.Time;
 @NoArgsConstructor
 public class Admin {
 
+    //Constructor without Id
+    public Admin(String firstName, String secondName, String phoneNumber, String verification_email, String image_url, String password, Integer level, Date passwordUpdatedAt, Date joinedAt) {
+        this.firstName = firstName;
+        this.secondName = secondName;
+        this.phoneNumber = phoneNumber;
+        this.verification_email = verification_email;
+        this.image_url = image_url;
+        this.password = password;
+        this.level = level;
+        this.passwordUpdatedAt = passwordUpdatedAt;
+        this.joinedAt = joinedAt;
+    }
+
+
     @Id
     @Column(name = "")
     private Long adminId;

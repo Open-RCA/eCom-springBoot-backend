@@ -17,6 +17,18 @@ import java.sql.Date;
 @AllArgsConstructor
 public class Product {
 
+    //Constructor without Id
+    public Product(Long categoryId, Long subCategoryId, String productName, Float price, Integer quantity, String image_url, String description, Date addedAt) {
+        this.categoryId = categoryId;
+        this.subCategoryId = subCategoryId;
+        this.productName = productName;
+        this.price = price;
+        this.quantity = quantity;
+        this.image_url = image_url;
+        this.description = description;
+        this.addedAt = addedAt;
+    }
+
     @Id
     @Column(name = "")
     private Long productId;

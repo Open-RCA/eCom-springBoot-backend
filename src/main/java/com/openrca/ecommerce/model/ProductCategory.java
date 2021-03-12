@@ -16,6 +16,11 @@ import java.sql.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ProductCategory {
+    //Constructor without Id
+    public ProductCategory(String categoryName, Date addedAt) {
+        this.categoryName = categoryName;
+        this.addedAt = addedAt;
+    }
 
     @Id
     @Column(name = "")

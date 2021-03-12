@@ -14,7 +14,20 @@ import javax.persistence.Table;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+
+
 public class Customer {
+
+    //Constructor without Id
+    public Customer(String firstName, String secondName, String password, String billingAddress, String defaultShippingAddress, String country, String phone) {
+        this.firstName = firstName;
+        this.secondName = secondName;
+        this.password = password;
+        this.billingAddress = billingAddress;
+        this.defaultShippingAddress = defaultShippingAddress;
+        this.country = country;
+        this.phone = phone;
+    }
 
     @Id
     @Column(name = "")

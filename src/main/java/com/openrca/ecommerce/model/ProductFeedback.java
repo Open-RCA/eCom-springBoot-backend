@@ -16,6 +16,16 @@ import java.sql.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ProductFeedback {
+    //Constructor without Id
+    public ProductFeedback(Integer product_id, String email, Boolean bestQuality, Boolean mediumQuality, Boolean lowQuality, String description, Date addedAt) {
+        this.product_id = product_id;
+        this.email = email;
+        this.bestQuality = bestQuality;
+        this.mediumQuality = mediumQuality;
+        this.lowQuality = lowQuality;
+        this.description = description;
+        this.addedAt = addedAt;
+    }
 
     @Id
     @Column(name = "")

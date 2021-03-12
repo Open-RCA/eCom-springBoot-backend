@@ -18,6 +18,17 @@ import java.sql.Time;
 
 public class OrderedItem {
 
+    //Constructor without Id
+    public OrderedItem(Integer productId, Integer orderedId, Integer productCategoryId, Double unit_price, Integer amount, Time createdAt) {
+        this.productId = productId;
+        this.orderedId = orderedId;
+        this.productCategoryId = productCategoryId;
+        this.unit_price = unit_price;
+        this.amount = amount;
+        this.createdAt = createdAt;
+    }
+
+
     @Id
     @Column(name = "")
     private Long id;
