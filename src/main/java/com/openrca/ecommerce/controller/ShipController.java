@@ -30,7 +30,7 @@ public class ShipController {
     }
 
 
-    @PutMapping("/product/{id}")
+    @PutMapping("/ship/{id}")
     public ResponseEntity<Ship> updateShipById(@PathVariable Long id, @RequestBody Ship ship){
 
         Optional<Ship> shipData = shipRepository.findById(id);
@@ -56,7 +56,7 @@ public class ShipController {
         }
     }
 
-    @DeleteMapping("/product/{id}")
+    @DeleteMapping("/ship/{id}")
     public void deleteShipById(@PathVariable Long id){
         shipRepository.deleteById(id);
     }
