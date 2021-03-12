@@ -38,6 +38,7 @@ public class CustomerController {
             _customer.setCustomerId(customer.getCustomerId());
             _customer.setFirstName(customer.getFirstName());
             _customer.setSecondName(customer.getSecondName());
+            _customer.setUsername(customer.getUsername());
             _customer.setPassword(customer.getPassword());
             _customer.setBillingAddress(customer.getBillingAddress());
             _customer.setDefaultShippingAddress(customer.getDefaultShippingAddress());

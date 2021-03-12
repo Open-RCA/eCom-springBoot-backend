@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @Getter
 @Setter
-@Table(name = "")
+@Table(name = "customers")
 @Entity
 @Builder
 @AllArgsConstructor
@@ -19,9 +19,12 @@ import javax.persistence.Table;
 public class Customer {
 
     //Constructor without Id
-    public Customer(String firstName, String secondName, String password, String billingAddress, String defaultShippingAddress, String country, String phone) {
+
+
+    public Customer(String firstName, String secondName, String username, String password, String billingAddress, String defaultShippingAddress, String country, String phone) {
         this.firstName = firstName;
         this.secondName = secondName;
+        this.username = username;
         this.password = password;
         this.billingAddress = billingAddress;
         this.defaultShippingAddress = defaultShippingAddress;
@@ -30,28 +33,31 @@ public class Customer {
     }
 
     @Id
-    @Column(name = "")
+    @Column(name = "customer_id")
     private Long customerId;
 
-    @Column(name = "")
+    @Column(name = "first_name")
     private String firstName;
 
-    @Column(name = "")
+    @Column(name = "second_name")
     private String secondName;
 
-    @Column(name = "")
+    @Column(name = "username")
+    private String username;
+
+    @Column(name = "password")
     private String password;
 
-    @Column(name = "")
+    @Column(name = "billing_address")
     private String billingAddress;
 
-    @Column(name = "")
+    @Column(name = "default_shipping_address")
     private String defaultShippingAddress;
 
-    @Column(name = "")
+    @Column(name = "country")
     private String country;
 
-    @Column(name = "")
+    @Column(name = "phone")
     private String phone;
 
 

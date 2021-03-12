@@ -39,7 +39,6 @@ public class OrderController {
             _order.setCustomerId(order.getCustomerId());
             _order.setShipId(order.getShipId());
             _order.setTotalNumberOfOrderedProduct(order.getTotalNumberOfOrderedProduct());
-            _order.setTotalOrderedCost(order.getTotalOrderedCost());
             _order.setTotalDiscount(order.getTotalDiscount());
             _order.setOrderedAt(order.getOrderedAt());
             _order.setOrderStatus(order.getOrderStatus());

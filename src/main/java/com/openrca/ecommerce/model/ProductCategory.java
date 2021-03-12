@@ -10,7 +10,7 @@ import java.sql.Date;
 
 @Getter
 @Setter
-@Table(name = "")
+@Table(name = "product_categories")
 @Entity
 @Builder
 @NoArgsConstructor
@@ -23,12 +23,12 @@ public class ProductCategory {
     }
 
     @Id
-    @Column(name = "")
+    @Column(name = "category_id")
     private Long categoryId;
 
-    @Column(name = "")
+    @Column(name = "category_name")
     private String categoryName;
 
-    @Column(name = "")
+    @Column(name = "addedAt")
     private Date addedAt;
 }

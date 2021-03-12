@@ -12,7 +12,7 @@ import java.sql.Time;
 
 @Getter
 @Setter
-@Table(name = "")
+@Table(name = "admin")
 @Entity
 @Builder
 @AllArgsConstructor
@@ -20,48 +20,53 @@ import java.sql.Time;
 public class Admin {
 
     //Constructor without Id
-    public Admin(String firstName, String secondName, String phoneNumber, String verification_email, String image_url, String password, Integer level, Date passwordUpdatedAt, Date joinedAt) {
+
+
+    public Admin(String firstName, String secondName, String phoneNumber, String verification_email, String image_url, String username, String password, Integer level, Date passwordUpdatedAt, Date joinedAt) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.phoneNumber = phoneNumber;
         this.verification_email = verification_email;
         this.image_url = image_url;
+        this.username = username;
         this.password = password;
         this.level = level;
         this.passwordUpdatedAt = passwordUpdatedAt;
         this.joinedAt = joinedAt;
     }
 
-
     @Id
-    @Column(name = "")
+    @Column(name = "admin_id")
     private Long adminId;
 
-    @Column(name = "")
+    @Column(name = "first_name")
     private String firstName;
 
-    @Column(name = "")
+    @Column(name = "second_name")
     private String secondName;
 
-    @Column(name = "")
+    @Column(name = "phone_number")
     private String phoneNumber;
 
-    @Column(name = "")
+    @Column(name = "verification_email")
     private String verification_email;
 
-    @Column(name = "")
+    @Column(name = "image_url")
     private String image_url;
 
-    @Column(name = "")
+    @Column(name = "username")
+    private String username;
+
+    @Column(name = "password")
     private String password;
 
-    @Column(name = "")
+    @Column(name = "level")
     private Integer level;
 
-    @Column(name = "")
+    @Column(name = "password_updated_at")
     private Date passwordUpdatedAt;
 
-    @Column(name = "")
+    @Column(name = "joined_at")
     private Date joinedAt;
 
 }

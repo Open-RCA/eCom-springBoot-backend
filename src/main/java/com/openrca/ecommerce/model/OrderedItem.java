@@ -10,7 +10,7 @@ import java.sql.Time;
 
 @Getter
 @Setter
-@Table(name = "")
+@Table(name = "ordered_items")
 @Entity
 @Builder
 @NoArgsConstructor
@@ -30,25 +30,25 @@ public class OrderedItem {
 
 
     @Id
-    @Column(name = "")
+    @Column(name = "id")
     private Long id;
 
-    @Column(name = "")
+    @Column(name = "product_id")
     private Integer productId;
 
-    @Column(name = "")
+    @Column(name = "order_id")
     private Integer orderedId;
 
-    @Column(name = "")
+    @Column(name = "product_category_id")
     private Integer productCategoryId;
 
-    @Column(name = "")
+    @Column(name = "unit_price")
     private Double unit_price;
 
-    @Column(name = "")
+    @Column(name = "amount")
     private Integer amount;
 
-    @Column(name = "")
+    @Column(name = "created_at")
     private Time createdAt;
 
 }

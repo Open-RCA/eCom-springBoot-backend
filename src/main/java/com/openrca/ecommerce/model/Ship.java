@@ -10,7 +10,7 @@ import java.sql.Time;
 
 @Setter
 @Getter
-@Table(name = "")
+@Table(name = "ship_tbl")
 @Entity
 @Builder
 @AllArgsConstructor
@@ -18,8 +18,6 @@ import java.sql.Time;
 public class Ship {
 
     //Constructor without Id
-
-
     public Ship(Integer orderId, Integer employeeId, Time dateOfShipment, String shipName, String shipAddress, String shipCity, String shipCountry, String shipPostalCode, Time addedInDbAt, Double shipCosts) {
         this.orderId = orderId;
         this.employeeId = employeeId;
@@ -34,37 +32,37 @@ public class Ship {
     }
 
     @Id
-    @Column(name = "")
+    @Column(name = "id")
     private Long shipId;
 
-    @Column(name = "")
+    @Column(name = "order_id")
     private Integer orderId;
 
-    @Column(name = "")
+    @Column(name = "employee_id")
     private Integer employeeId;
 
-    @Column(name = "")
+    @Column(name = "date_of_shipment")
     private Time dateOfShipment;
 
-    @Column(name = "")
+    @Column(name = "shipName")
     private String shipName;
 
-    @Column(name = "")
+    @Column(name = "shipAddress")
     private String shipAddress;
 
-    @Column(name = "")
+    @Column(name = "shipCity")
     private String shipCity;
 
-    @Column(name = "")
+    @Column(name = "shipCountry")
     private String shipCountry;
 
-    @Column(name = "")
+    @Column(name = "shipPostalCode")
     private String shipPostalCode;
 
-    @Column(name = "")
+    @Column(name = "added_in_db_at")
     private Time addedInDbAt;
 
-    @Column(name = "")
+    @Column(name = "ship_cost")
     private Double shipCosts;
 
 }

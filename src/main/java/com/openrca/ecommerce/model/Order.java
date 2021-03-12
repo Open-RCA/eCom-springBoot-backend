@@ -11,7 +11,7 @@ import java.sql.Time;
 
 @Getter
 @Setter
-@Table(name = "")
+@Table(name = "orders")
 @Entity
 @Builder
 @NoArgsConstructor
@@ -23,7 +23,6 @@ public class Order {
         this.customerId = customerId;
         this.shipId = shipId;
         this.totalNumberOfOrderedProduct = totalNumberOfOrderedProduct;
-        this.totalOrderedCost = totalOrderedCost;
         this.totalDiscount = totalDiscount;
         this.orderedAt = orderedAt;
         OrderStatus = orderStatus;
@@ -31,30 +30,27 @@ public class Order {
     }
 
     @Id
-    @Column(name = "")
+    @Column(name = "order_id")
     private Long orderId;
 
-    @Column(name = "")
+    @Column(name = "customer_id")
     private Integer customerId;
 
-    @Column(name = "")
+    @Column(name = "ship_id")
     private Integer shipId;
 
-    @Column(name = "")
+    @Column(name = "total_number_of_ordered_product")
     private Integer totalNumberOfOrderedProduct;
 
-    @Column(name = "")
-    private Double totalOrderedCost;
-
-    @Column(name = "")
+    @Column(name = "total_discount")
     private Double totalDiscount;
 
-    @Column(name = "")
+    @Column(name = "ordered_at")
     private Time orderedAt;
 
-    @Column(name = "")
+    @Column(name = "ordered_status")
     private Boolean OrderStatus;
 
-    @Column(name = "")
+    @Column(name = "shipping_method")
     private String ShippingMethod;
 }

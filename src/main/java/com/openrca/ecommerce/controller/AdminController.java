@@ -41,6 +41,7 @@ public class AdminController {
             _admin.setPhoneNumber(admin.getPhoneNumber());
             _admin.setVerification_email(admin.getVerification_email());
             _admin.setImage_url(admin.getImage_url());
+            _admin.setUsername(admin.getUsername());
             _admin.setPassword(admin.getPassword());
             _admin.setLevel(admin.getLevel());
             _admin.setPasswordUpdatedAt(admin.getPasswordUpdatedAt());

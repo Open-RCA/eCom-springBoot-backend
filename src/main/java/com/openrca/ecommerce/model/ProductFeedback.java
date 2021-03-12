@@ -10,7 +10,7 @@ import java.sql.Date;
 
 @Getter
 @Setter
-@Table(name = "")
+@Table(name = "product_feedback")
 @Entity
 @Builder
 @NoArgsConstructor
@@ -28,27 +28,27 @@ public class ProductFeedback {
     }
 
     @Id
-    @Column(name = "")
+    @Column(name = "feedback_id")
     private Long feedbackId;
 
-    @Column(name = "")
+    @Column(name = "product_id")
     private Integer product_id;
 
-    @Column(name = "")
+    @Column(name = "email")
     private String email;
 
-    @Column(name = "")
+    @Column(name = "best_quality")
     private Boolean bestQuality;
 
-    @Column(name = "")
+    @Column(name = "medium_quality")
     private Boolean mediumQuality;
 
-    @Column(name = "")
+    @Column(name = "low_quality")
     private Boolean lowQuality;
 
-    @Column(name = "")
+    @Column(name = "description")
     private String description;
 
-    @Column(name = "")
+    @Column(name = "addedAt")
     private Date addedAt;
 }

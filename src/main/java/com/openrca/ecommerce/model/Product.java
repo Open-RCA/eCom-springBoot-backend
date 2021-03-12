@@ -10,7 +10,7 @@ import java.sql.Date;
 
 @Getter
 @Setter
-@Table(name = "")
+@Table(name = "products")
 @Entity
 @Builder
 @NoArgsConstructor
@@ -30,31 +30,31 @@ public class Product {
     }
 
     @Id
-    @Column(name = "")
+    @Column(name = "product_id")
     private Long productId;
 
-    @Column(name = "")
+    @Column(name = "category_id")
     private Long categoryId;
 
-    @Column(name = "")
+    @Column(name = "sub_category_id")
     private Long subCategoryId;
 
-    @Column(name = "")
+    @Column(name = "product_name")
     private String productName;
 
-    @Column(name = "")
+    @Column(name = "price")
     private Float price;
 
-    @Column(name = "")
+    @Column(name = "qunatity")
     private Integer quantity;
 
-    @Column(name = "")
+    @Column(name = "image_url")
     private String image_url;
 
-    @Column(name = "")
+    @Column(name = "description")
     private String description;
 
-    @Column(name = "")
+    @Column(name = "added_at")
     private Date addedAt;
 
 }
